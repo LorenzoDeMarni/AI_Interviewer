@@ -6,6 +6,9 @@ import PyPDF2
 import docx
 import os
 from openai import AsyncOpenAI
+from dotenv import load_dotenv
+
+load_dotenv()  # Load environment variables from .env file
 
 # Initialize Quart app
 app = Quart(__name__)
@@ -13,7 +16,7 @@ app = cors(app, allow_origin="http://localhost:3000")  # Allow requests from fro
 
 # Initialize the OpenAI async client
 aclient = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-
+# 
 def extract_text_from_pdf(file_path):
     """Extract text from a PDF file."""
     text = ""

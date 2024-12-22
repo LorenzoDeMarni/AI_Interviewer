@@ -1,0 +1,36 @@
+# Python-related
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.py[cod]
+*.so
+*.egg-info/
+
+# Environment variables
+.env
+
+# Virtual environment
+venv/
+
+# Node.js dependencies
+frontend/node_modules/
+
+# Build files
+frontend/build/
+frontend/.parcel-cache/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/editor-related files
+.vscode/
+.idea/
+
